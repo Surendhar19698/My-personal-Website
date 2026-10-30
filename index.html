@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Surendhar M | Senior Citrix Engineer</title>
+<title>Surendhar M | Portfolio</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
@@ -19,213 +18,231 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#07111f;
+background:#030712;
 color:white;
 overflow-x:hidden;
 }
 
-/* Animated Background */
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(15px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#00d9ff;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00d9ff;
+}
+
+/* HERO */
 
 .hero{
 height:100vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
-flex-direction:column;
 text-align:center;
-background:linear-gradient(
--45deg,
-#0f172a,
-#1e40af,
-#06b6d4,
-#7c3aed
-);
+
+background:linear-gradient(-45deg,#0f172a,#1d4ed8,#7c3aed,#06b6d4);
 background-size:400% 400%;
-animation:gradient 12s ease infinite;
+animation:gradient 10s ease infinite;
 }
 
 @keyframes gradient{
-0%{
-background-position:0% 50%;
-}
-50%{
-background-position:100% 50%;
-}
-100%{
-background-position:0% 50%;
-}
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
-/* Logo */
-
-.logo{
-width:120px;
-height:120px;
+.profile{
+width:160px;
+height:160px;
 border-radius:50%;
-background:linear-gradient(45deg,#00c6ff,#0072ff);
+background:linear-gradient(45deg,#00d9ff,#7c3aed);
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:46px;
+font-size:55px;
 font-weight:bold;
-box-shadow:0 0 40px #00c6ff;
-margin-bottom:25px;
+box-shadow:0 0 40px cyan;
+margin-bottom:20px;
 }
-
-/* Hero */
 
 .hero h1{
 font-size:60px;
-margin-bottom:15px;
 }
 
 .hero p{
-font-size:24px;
-color:#ddd;
+font-size:22px;
+margin-top:10px;
 }
 
 #typing{
 color:#00ffff;
-font-weight:bold;
-}
-
-.btns{
-margin-top:30px;
-display:flex;
-gap:15px;
-flex-wrap:wrap;
 }
 
 .btn{
-padding:14px 25px;
-border-radius:30px;
-text-decoration:none;
+margin-top:30px;
+padding:14px 30px;
+border:none;
+border-radius:40px;
+background:#00d9ff;
+color:black;
 font-weight:bold;
-transition:.4s;
+cursor:pointer;
 }
 
-.resume{
-background:#00c6ff;
-color:white;
-}
-
-.contact{
-background:transparent;
-border:2px solid white;
-color:white;
-}
-
-.btn:hover{
-transform:scale(1.08);
-}
-
-/* Sections */
+/* SECTION */
 
 section{
-padding:80px 8%;
+padding:90px 10%;
 }
 
-.section-title{
-text-align:center;
+.title{
 font-size:40px;
+text-align:center;
 margin-bottom:50px;
-color:#00c6ff;
+color:#00d9ff;
 }
 
-/* About */
+/* GLASS */
 
-.about-card{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(10px);
-padding:35px;
+.glass{
+background:rgba(255,255,255,.07);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
 border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-line-height:1.8;
+padding:30px;
 }
 
-/* Skills */
+/* ABOUT */
+
+.about p{
+line-height:1.8;
+font-size:18px;
+}
+
+/* SKILLS */
 
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
 
 .skill-card{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(15px);
 padding:25px;
-border-radius:20px;
 transition:.4s;
 }
 
 .skill-card:hover{
 transform:translateY(-10px);
-box-shadow:0 15px 30px rgba(0,255,255,.3);
+box-shadow:0 0 30px #00d9ff;
 }
 
 .skill-card h3{
-margin-bottom:18px;
-color:#00c6ff;
-}
-
-.skill-card ul{
-list-style:none;
-}
-
-.skill-card li{
-padding:5px 0;
-}
-
-/* Progress Bars */
-
-.progress{
-margin-top:25px;
-}
-
-.item{
-margin-bottom:20px;
-}
-
-.bar{
-height:12px;
-background:#333;
-border-radius:20px;
-overflow:hidden;
-}
-
-.fill{
-height:100%;
-background:linear-gradient(90deg,#00c6ff,#0072ff);
-}
-
-/* Projects */
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.project{
-background:rgba(255,255,255,.08);
-padding:25px;
-border-radius:20px;
-transition:.4s;
-}
-
-.project:hover{
-transform:translateY(-10px);
-}
-
-.project h3{
-color:#00ffff;
+color:#00d9ff;
 margin-bottom:15px;
 }
 
-/* Contact */
+.skill-card li{
+padding:6px 0;
+}
 
-.contact-section{
+/* PROJECT TABS */
+
+.tabs{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.tab{
+padding:12px 25px;
+border-radius:30px;
+border:none;
+cursor:pointer;
+background:#111827;
+color:white;
+}
+
+.tab.active{
+background:#00d9ff;
+color:black;
+font-weight:bold;
+}
+
+.project-content{
+display:none;
+}
+
+.project-content.active{
+display:block;
+animation:fade .5s;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.project-card{
+margin-top:20px;
+padding:25px;
+}
+
+.project-card h3{
+margin-bottom:15px;
+color:#00ffff;
+}
+
+.project-card ul{
+margin-top:15px;
+padding-left:20px;
+}
+
+.project-card li{
+padding:5px 0;
+}
+
+/* CONTACT */
+
+.contact{
 text-align:center;
 }
 
@@ -234,34 +251,41 @@ margin-top:20px;
 }
 
 .socials a{
-font-size:32px;
-color:white;
+font-size:30px;
 margin:15px;
-transition:.4s;
+color:white;
 }
 
 .socials a:hover{
-color:#00ffff;
+color:#00d9ff;
 }
 
+/* FOOTER */
+
 footer{
-padding:25px;
+padding:30px;
 text-align:center;
 background:#020617;
 }
 
-@media(max-width:768px){
+/* PARTICLES */
 
-.hero h1{
-font-size:35px;
+.particle{
+position:absolute;
+width:5px;
+height:5px;
+background:#00ffff;
+border-radius:50%;
+animation:float 10s linear infinite;
+opacity:.5;
 }
 
-.hero p{
-font-size:18px;
+@keyframes float{
+from{
+transform:translateY(100vh);
 }
-
-.section-title{
-font-size:30px;
+to{
+transform:translateY(-100vh);
 }
 }
 
@@ -270,54 +294,51 @@ font-size:30px;
 
 <body>
 
-<!-- HERO -->
+<nav>
+<div class="logo">SM</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
 
 <section class="hero">
 
-<div class="logo">
+<div class="profile">
 SM
 </div>
 
 <h1>Surendhar M</h1>
 
-<p>
-<span id="typing"></span>
-</p>
+<p id="typing"></p>
 
-<div class="btns">
-<a href="#" class="btn resume">
-Download Resume
-</a>
-
-<a href="#contact" class="btn contact">
-Contact Me
-</a>
-</div>
+<button class="btn">Download Resume</button>
 
 </section>
 
-<!-- ABOUT -->
+<section id="about">
 
-<section>
+<h2 class="title">About Me</h2>
 
-<h2 class="section-title">
-About Me
-</h2>
-
-<div class="about-card">
+<div class="glass about">
 
 <p>
 
-I am a Senior Engineer specializing in Citrix, End User Computing (EUC),
-Cloud Infrastructure, Active Directory Administration, and Linux Platform
-Management.
+Senior Engineer with extensive experience in Citrix Virtual Apps and
+Desktops (CVAD), Citrix Cloud, Active Directory, AWS, Azure, Linux
+Administration and Enterprise Infrastructure Management.
 
-I have hands-on experience designing, implementing and supporting enterprise
-Citrix environments including Citrix Cloud, Virtual Apps and Desktops,
-StoreFront, NetScaler ADC, UPM, FSLogix and VDI optimization.
+Experienced in designing, implementing, upgrading and troubleshooting
+large-scale Citrix environments. Skilled in NetScaler ADC, StoreFront,
+Citrix Cloud Connectors, UPM, FSLogix, Virtualization, Cloud Solutions
+and Infrastructure Automation.
 
-My expertise also includes AWS, Azure, Active Directory, Windows Server,
-Linux Administration, Virtualization Platforms and IT Automation.
+Passionate about building scalable, secure and highly available
+enterprise platforms while delivering reliable end-user experiences.
 
 </p>
 
@@ -325,198 +346,234 @@ Linux Administration, Virtualization Platforms and IT Automation.
 
 </section>
 
-<!-- SKILLS -->
+<section id="projects">
 
-<section>
+<h2 class="title">Projects Portfolio</h2>
 
-<h2 class="section-title">
-Technical Skills
-</h2>
+<div class="tabs">
 
-<div class="skills">
+<button class="tab active" onclick="showProject('citrix',this)">Citrix</button>
 
-<div class="skill-card">
-<h3><i class="fas fa-desktop"></i> Citrix Technologies</h3>
-<ul>
-<li>Citrix Cloud</li>
-<li>CVAD</li>
-<li>StoreFront</li>
-<li>NetScaler ADC</li>
-<li>PVS</li>
-<li>UPM / FSLogix</li>
-</ul>
-</div>
+<button class="tab" onclick="showProject('aws',this)">AWS</button>
 
-<div class="skill-card">
-<h3><i class="fas fa-server"></i> Active Directory</h3>
-<ul>
-<li>AD Administration</li>
-<li>DNS</li>
-<li>DHCP</li>
-<li>Group Policy</li>
-<li>Windows Server</li>
-</ul>
-</div>
+<button class="tab" onclick="showProject('azure',this)">Azure</button>
 
-<div class="skill-card">
-<h3><i class="fab fa-aws"></i> AWS Cloud</h3>
-<ul>
-<li>EC2</li>
-<li>IAM</li>
-<li>Lambda</li>
-<li>SSM</li>
-<li>CloudWatch</li>
-</ul>
-</div>
-
-<div class="skill-card">
-<h3><i class="fab fa-microsoft"></i> Azure</h3>
-<ul>
-<li>Azure VMs</li>
-<li>Storage</li>
-<li>Networking</li>
-<li>Azure AD</li>
-</ul>
-</div>
-
-<div class="skill-card">
-<h3><i class="fab fa-linux"></i> Linux Administration</h3>
-<ul>
-<li>RHEL</li>
-<li>Ubuntu</li>
-<li>Shell Scripting</li>
-<li>User Management</li>
-<li>Services</li>
-</ul>
-</div>
-
-<div class="skill-card">
-<h3><i class="fas fa-cloud"></i> Virtualization</h3>
-<ul>
-<li>VMware ESXi</li>
-<li>Hyper-V</li>
-<li>Citrix Hypervisor</li>
-<li>DR Operations</li>
-</ul>
-</div>
+<button class="tab" onclick="showProject('linux',this)">Linux</button>
 
 </div>
 
-<div class="progress">
 
-<div class="item">
-Citrix
-<div class="bar">
-<div class="fill" style="width:95%"></div>
-</div>
-</div>
+<div id="citrix" class="project-content active">
 
-<div class="item">
-Active Directory
-<div class="bar">
-<div class="fill" style="width:95%"></div>
-</div>
-</div>
+<div class="glass project-card">
 
-<div class="item">
-AWS
-<div class="bar">
-<div class="fill" style="width:85%"></div>
-</div>
-</div>
+<h3>🚀 Citrix CVAD Implementation</h3>
 
-<div class="item">
-Azure
-<div class="bar">
-<div class="fill" style="width:80%"></div>
-</div>
-</div>
-
-<div class="item">
-Linux
-<div class="bar">
-<div class="fill" style="width:85%"></div>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section>
-
-<h2 class="section-title">
-Projects
-</h2>
-
-<div class="projects">
-
-<div class="project">
-<h3>AWS AD Automation</h3>
 <p>
-Automated employee onboarding using AWS Lambda,
-API Gateway, Cognito and Active Directory integration.
+
+Designed and implemented Citrix Virtual Apps and Desktops (CVAD)
+from scratch for enterprise customers.
+
 </p>
-</div>
 
-<div class="project">
-<h3>Citrix Infrastructure Upgrade</h3>
-<p>
-Executed Citrix VDA and infrastructure upgrades
-with minimal downtime and rollback planning.
-</p>
-</div>
+<ul>
 
-<div class="project">
-<h3>FSLogix Optimization</h3>
-<p>
-Improved login performance and Office 365
-experience through profile optimization.
-</p>
-</div>
+<li>Installed and configured Delivery Controllers.</li>
 
-<div class="project">
-<h3>NetScaler Upgrade</h3>
-<p>
-Performed ADC upgrades, SSL certificate migration,
-SAML authentication and gateway optimization.
-</p>
-</div>
+<li>Configured StoreFront infrastructure.</li>
 
-</div>
+<li>Integrated Citrix ADC (NetScaler Gateway).</li>
 
-</section>
+<li>Configured SQL database connectivity.</li>
 
-<!-- CONTACT -->
+<li>Created Machine Catalogs and Delivery Groups.</li>
 
-<section id="contact">
+<li>Published Virtual Desktops.</li>
 
-<h2 class="section-title">
-Get In Touch
-</h2>
+<li>Published Business Applications.</li>
 
-<div class="contact-section">
+<li>Configured Citrix Policies and User Experience Settings.</li>
 
-<h3>Surendhar M</h3>
+<li>Integrated Active Directory authentication.</li>
+
+<li>Implemented SSL Certificates and Secure Access.</li>
+
+<li>Performed User Acceptance Testing and Go-Live Activities.</li>
+
+</ul>
 
 <br>
 
-<p>📍 Coimbatore, Tamil Nadu, India</p>
+<b>Outcome:</b>
+
+Delivered a secure and scalable Citrix environment supporting
+enterprise users with centralized application and desktop delivery.
+
+</div>
+
+<div class="glass project-card">
+
+<h3>🔧 Citrix VDA Upgrade Project</h3>
+
+<p>
+
+Successfully upgraded Citrix VDAs across production and DR environments.
+
+</p>
+
+<ul>
+<li>Created implementation plan.</li>
+<li>Rollback planning.</li>
+<li>Snapshot management.</li>
+<li>Post upgrade health checks.</li>
+<li>Production validation.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div id="aws" class="project-content">
+
+<div class="glass project-card">
+
+<h3>☁ AWS AD Automation</h3>
+
+<p>
+
+Designed automated onboarding workflow using AWS Lambda,
+API Gateway, Cognito and Active Directory integration.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div id="azure" class="project-content">
+
+<div class="glass project-card">
+
+<h3>🔷 Azure Infrastructure Project</h3>
+
+<p>
+
+Managed Azure Virtual Machines, Storage Services and
+Hybrid Identity Integrations.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div id="linux" class="project-content">
+
+<div class="glass project-card">
+
+<h3>🐧 Linux Administration</h3>
+
+<p>
+
+Managed RHEL and Ubuntu environments including user
+administration, patching, scripting and service management.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="skills">
+
+<div class="glass skill-card">
+<h3>Citrix</h3>
+CVAD<br>
+Citrix Cloud<br>
+StoreFront<br>
+NetScaler ADC<br>
+UPM<br>
+FSLogix
+</div>
+
+<div class="glass skill-card">
+<h3>Active Directory</h3>
+AD<br>
+DNS<br>
+DHCP<br>
+Group Policy<br>
+Windows Server
+</div>
+
+<div class="glass skill-card">
+<h3>AWS</h3>
+EC2<br>
+IAM<br>
+Lambda<br>
+CloudWatch<br>
+Systems Manager
+</div>
+
+<div class="glass skill-card">
+<h3>Azure</h3>
+Azure VM<br>
+Storage<br>
+Networking<br>
+Azure AD
+</div>
+
+<div class="glass skill-card">
+<h3>Linux</h3>
+RHEL<br>
+Ubuntu<br>
+Shell Scripting<br>
+Services
+</div>
+
+<div class="glass skill-card">
+<h3>Virtualization</h3>
+VMware ESXi<br>
+Hyper-V<br>
+Citrix Hypervisor
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="glass contact">
+
+<h3>Surendhar M</h3>
+
+<p>Senior Engineer | Hypercore</p>
+
+<p>📍 Coimbatore, Tamil Nadu</p>
 
 <p>📧 yourmail@example.com</p>
 
-<p>
-</a>
+<div class="socials">
 
-#
-<i class="fab fa-github"></i>
-</a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
 
-#
-<i class="fas fa-envelope"></i>
-</a>
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fa-solid fa-envelope"></i></a>
 
 </div>
 
@@ -525,31 +582,61 @@ Get In Touch
 </section>
 
 <footer>
-© 2026 Surendhar M | Citrix | AWS | Azure | Active Directory | Linux
+
+© 2026 Surendhar M Portfolio
+
 </footer>
 
 <script>
 
-const text =
-"Senior Citrix Engineer | AWS Cloud | Azure | Active Directory | Linux Administrator";
+let text="Senior Citrix Engineer | AWS | Azure | Active Directory | Linux Administrator";
+let i=0;
 
-let i = 0;
+function typing(){
 
-function typeWriter(){
+if(i<text.length){
 
-if(i < text.length){
-
-document.getElementById("typing").innerHTML += text.charAt(i);
+document.getElementById("typing").innerHTML+=text.charAt(i);
 
 i++;
 
-setTimeout(typeWriter,70);
+setTimeout(typing,60);
 
 }
 
 }
 
-typeWriter();
+typing();
+
+function showProject(id,element){
+
+document.querySelectorAll('.project-content').forEach(x=>{
+x.classList.remove('active');
+});
+
+document.getElementById(id).classList.add('active');
+
+document.querySelectorAll('.tab').forEach(x=>{
+x.classList.remove('active');
+});
+
+element.classList.add('active');
+
+}
+
+for(let i=0;i<40;i++){
+
+let p=document.createElement("div");
+
+p.classList.add("particle");
+
+p.style.left=Math.random()*100+"%";
+
+p.style.animationDuration=(Math.random()*10+10)+"s";
+
+document.body.appendChild(p);
+
+}
 
 </script>
 
